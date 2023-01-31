@@ -9,7 +9,15 @@ export const authOptions = {
       clientId: process.env.GOOGLE_CLIENT_ID,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
-    // ...add more providers here
+    
   ],
+  database: process.env.DB_URL,
+  session: {
+    jwt: true
+  },
+  jwt: {
+    secret: 'lkjiuhdjnbnvgftasjjfnfkkshsfjmnfkiif'
+  }
+
 };
 export default NextAuth(authOptions);
