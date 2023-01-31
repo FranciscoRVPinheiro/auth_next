@@ -14,11 +14,11 @@ export default function Header() {
     );
     let notLogged = (
       <li className="mr-3">
-        <Link href="/" onClick={() => signIn()}>
+        <Link href="api/auth/signin" onClick={() => signIn()}>
           Login
         </Link>
       </li>
-    )
+    );
   
   return (
     <div className=" bg-black text-lg text-slate-100 h-14">
